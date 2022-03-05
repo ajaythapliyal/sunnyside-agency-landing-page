@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 50%));
+}
+
+img{
+    min-width: 375px;
+}
+
+.grid-full-width{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.transform{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
