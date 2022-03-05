@@ -17,12 +17,15 @@ img{
 }
 
 .grid-full-width{
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-end: span 2;
 }
 
 .transform{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+}
+
+.transform > *{
+    flex: 1 0 50%;
 }
