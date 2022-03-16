@@ -9,16 +9,18 @@ html, body{
 
 main{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(375px, 50%));
+    grid-template-columns: repeat(auto-fit, minmax(max(300px, 50%), 1fr))
 }
 
 img{
-    min-width: 375px;
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
-.grid-full-width{
-    grid-column-end: span 2;
+ .grid-full-width{
+    grid-column: 1/-1;
 }
+
 
 .transform{
     display: flex;
@@ -26,6 +28,11 @@ img{
     flex-direction: row-reverse;
 }
 
+
 .transform > *{
-    flex: 1 0 50%;
+    flex: 1 1 50%;
+}
+
+.transform img{
+    min-width: 300px;
 }
