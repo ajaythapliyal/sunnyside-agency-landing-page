@@ -36,3 +36,15 @@ img{
 .transform img{
     min-width: 300px;
 }
+
+.testimonials{
+    display: flex;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.width-50{
+    width: 50%;
+}
