@@ -7,6 +7,19 @@ html, body{
     min-height: 100vh;
 }
 
+:root{
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --desat-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --moderate-cyan: hsl(168, 34%, 41%);
+    --desat-blue: hsl(212, 27%, 19%);
+    --very-dark-gray-blue: hsl(213, 9%, 39%);
+    --dark-gray-blue: hsl(232, 10%, 55%);
+    --gray-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
 main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(max(300px, 50%), 1fr))
@@ -37,14 +50,28 @@ img{
     min-width: 300px;
 }
 
-.testimonials{
-    display: flex;
-}
-
 .d-flex{
     display: flex;
 }
 
 .width-50{
     width: 50%;
+}
+
+.pos-relative{
+    position: relative;
+}
+
+.header-caption{
+    position: absolute;
+    top : 25%;
+    left:  25%
+}
+
+.header-caption > *{
+    color: var(--white);
+    font-family: 'Fraunces', serif;
+    letter-spacing: 10px;
+    font-size: 3em;
+    text-align: center;
 }
