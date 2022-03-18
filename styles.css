@@ -64,14 +64,22 @@ img{
 
 .header-caption{
     position: absolute;
-    top : 25%;
-    left:  25%
+    top : 30%;
+    left:  50%;
+    transform: translate(-50%, -50%);
 }
 
-.header-caption > *{
+.header-caption > p{
     color: var(--white);
     font-family: 'Fraunces', serif;
     letter-spacing: 10px;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
+}
+
+.header-caption + img{
+    position: absolute;
+    top : 50%;
+    left:  50%;
+    transform: translate(-50%, -50%); 
 }
