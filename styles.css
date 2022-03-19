@@ -124,3 +124,13 @@ img{
 .width-small{
     width : 30px
 }
+
+@media screen and (max-width: 448px) {
+    .header-caption > p{
+        color: var(--white);
+        font-family: 'Fraunces', serif;
+        letter-spacing: 7px;
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
