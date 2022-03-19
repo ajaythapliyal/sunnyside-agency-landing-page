@@ -91,10 +91,8 @@ img{
 }
 
 .standalone-desc>*{
-    margin-left: 5px;
-    margin-right: 5px;
-    max-width: max(60%,365px);
-    text-align: center;
+    width:47%;
+    text-align: left; 
 }
 
 
@@ -125,12 +123,24 @@ img{
     width : 30px
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 600px) {
+
     .header-caption > p{
-        color: var(--white);
-        font-family: 'Fraunces', serif;
         letter-spacing: 7px;
         font-size: 2.5em;
+    }
+
+    .standalone-desc{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .standalone-desc > *{
+        width: 90%;
         text-align: center;
+    }
+
+    .standalone-desc>p:first-of-type{
+        font-size: 2em;
     }
 }
