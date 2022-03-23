@@ -130,8 +130,12 @@ img{
 }
 
 .img-desc > p:nth-child(2){
+    margin-top: 2rem;
     font-family: 'Barlow', serif;
+    font-size: 1rem;
     max-inline-size: 37ch;
+    min-inline-size: 37ch;
+    line-height: 1.4rem;
 }
 
 .green-caption{
