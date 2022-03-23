@@ -156,6 +156,11 @@ img{
 
 .testimonials-header{
     margin-top: max(10%, 2rem);
+    font-size: clamp(1rem, 0.9296rem + 0.3005vw, 1.2rem);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: var(--gray-blue);
 }
 
 .testimonial{
