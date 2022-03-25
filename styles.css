@@ -173,7 +173,6 @@ img{
 }
 
 .testimonial > p:not(:last-child){
-    /* margin-top: max(15%, 1rem); */
     margin-top: clamp(1.5rem,5vw, 3.5rem);
 }
 
@@ -201,7 +200,7 @@ img{
 }
 
 .footer{
-    background-color: var(--moderate-cyan);
+    background-color: hsla(168, 34%, 56%, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +214,30 @@ img{
     font-size: 2rem;
     color: var(--desat-cyan);
     margin-bottom: 2rem;
+}
+
+footer>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+footer a p {
+    font-family: 'Barlow', serif;
+    font-size: 1rem;
+    color: var(--desat-cyan);
+}
+
+footer img{
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 4rem;
 }
 
 .thumbnail{
